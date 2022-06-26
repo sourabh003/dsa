@@ -1,12 +1,9 @@
-import java.io.Console;
-
 public class QuickSort {
     public static void main(String[] args) {
         final int[] arr = { 68, 69, 93, 62, 52, 64, 22, 72, 71, 44, 33, 20, 76, 21, 92, 85, 48, 80, 50, 84, 6,
                 35, 32, 25, 54,
                 3, 59, 77, 26, 89 };
         quickSort(arr, 0, arr.length - 1);
-        // printArray(arr);
     }
 
     public static void quickSort(int[] arr, int low, int high) {
@@ -37,11 +34,11 @@ public class QuickSort {
     }
 
     public static void swap(int[] arr, int index1, int index2) {
-        printSwappedArray(arr, index1, index2, true);
+        printSwappedArray(arr, index1, index2);
         int temp = arr[index1];
         arr[index1] = arr[index2];
         arr[index2] = temp;
-        printSwappedArray(arr, index1, index2, false);
+        printSwappedArray(arr, index1, index2);
     }
 
     public static void printArray(int[] arr) {
@@ -51,7 +48,7 @@ public class QuickSort {
         System.out.println("");
     }
 
-    public static void printSwappedArray(int[] arr, int elem1, int elem2, boolean before) {
+    public static void printSwappedArray(int[] arr, int elem1, int elem2) {
         for (int i = 0; i < arr.length; i++) {
             if (i == elem1) {
                 System.out.print("\033[42m" + arr[i] + "\033[0m ");
