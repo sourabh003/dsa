@@ -1,6 +1,7 @@
-package Utils;
+package utils;
 
 public class Utils {
+
     public static void swap(int[] arr, int index1, int index2) {
         printSwappedArray(arr, index1, index2);
         int temp = arr[index1];
@@ -18,6 +19,13 @@ public class Utils {
             } else {
                 System.out.print(arr[i] + " ");
             }
+        }
+        System.out.println("");
+    }
+
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println("");
     }

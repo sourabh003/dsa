@@ -1,10 +1,10 @@
+import utils.Utils;
+
 public class Sorting {
     public static void main(String[] args) {
         int[] inputArray = { 1, 5, 3, 2, 8, 43, 88, 0 };
         int[] resultArray = insertionSort(inputArray, inputArray.length);
-        for (int i : resultArray) {
-            System.out.print(i + " ");
-        }
+        Utils.printArray(resultArray);
     }
 
     // Bubble Sort - Time Complexity => O(n^2)
@@ -39,20 +39,20 @@ public class Sorting {
     }
 
     // Insertion Sort - Time Complexity - 0(n^2)
-    public static int[] insertionSort(int[] arr, int n){
+    public static int[] insertionSort(int[] arr, int n) {
         // looping the unsorted array
-        for(int i = 1; i < n; i++){
+        for (int i = 1; i < n; i++) {
             int current = arr[i];
 
             int j = i - 1;
             // looping the sorted array
-            while(j >= 0 && current < arr[j]){
+            while (j >= 0 && current < arr[j]) {
                 // pushing elements to make space
-                arr[j +1] = arr[j];
+                arr[j + 1] = arr[j];
                 j--;
             }
             // placing the smallest element
-            arr[j+1] = current;
+            arr[j + 1] = current;
         }
         return arr;
     }
