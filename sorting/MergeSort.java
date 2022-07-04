@@ -10,6 +10,7 @@ public class MergeSort {
     }
 
     public static void divide(int[] arr, int start, int end) {
+        Utils.printArray(arr);
         if (start < end) {
             int mid = (start + end) / 2;
             divide(arr, start, mid);
