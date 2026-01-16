@@ -1,0 +1,13 @@
+{
+	"name": "dsa",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"compile": "tsc --outDir out"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"description": ""
+}
