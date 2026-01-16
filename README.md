@@ -15,4 +15,4 @@ Ps - These are neetcode's 150 list of problems.
 | https://leetcode.com/problems/two-sum-ii-input-array-is-sorted  |  ✅ | 
 | https://leetcode.com/problems/valid-palindrome  |  ✅ | 
 | https://leetcode.com/problems/container-with-most-water  |   | 
-| hhttps://leetcode.com/problems/trapping-rain-water  |   | 
+| https://leetcode.com/problems/trapping-rain-water  |   | 
