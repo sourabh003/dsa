@@ -3,7 +3,7 @@
 
 Just me banging my head on DSA Problems 😭
 
-Ps - These are neetcode's 150 list of problems.
+Ps - This is Striver's DSA sheet problems.
 
 ## Array and Hashing
 
